@@ -1,0 +1,39 @@
+.item {
+  padding-right: 8px;
+}
+
+.item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  transition: all 0.4s linear;
+  cursor: pointer;
+}
+
+.item p {
+  padding-right: 8px;
+  margin: 8px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.item-prices {
+  display: flex;
+  gap: 20px;
+  color: var(--black);
+}
+
+.item-price-new {
+}
+
+.item-price-old {
+  color: var(--color-grey);
+  text-decoration: line-through;
+}
