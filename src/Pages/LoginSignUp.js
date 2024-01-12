@@ -4,6 +4,13 @@ import "./CSS/LoginSignup.css";
 const LoginSignUp = () => {
   const [action, setAction] = useState("Đăng ký");
 
+  const toggleAction = () => {
+    setAction("Đăng nhập");
+    if (action === "Đăng nhập") {
+      setAction("Đăng ký");
+    }
+  };
+
   return (
     <div className="loginsSignup">
       <div className="loginSignup-container">
@@ -23,9 +30,9 @@ const LoginSignUp = () => {
 
         <p className="loginSignup-login">
           {action === "Đăng nhập"
-            ? "Bạn mới biết đến ShopeeFashion?"
-            : "Bạn đã có tài khoản?"}{" "}
-          <span onClick={() => setAction("Đăng nhập")}>
+            ? "Bạn mới biết đến ShopeeFashion? "
+            : "Bạn đã có tài khoản? "}{" "}
+          <span onClick={toggleAction}>
             {action === "Đăng nhập" ? "Đăng ký" : "Đăng nhập"}
           </span>
         </p>

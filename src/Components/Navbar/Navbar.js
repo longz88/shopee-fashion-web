@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./Navbar.css";
-
 import logo from "../Assets/logo-orange-1.png";
 import cart_icon from "../Assets/cart_icon.png";
 import { Link } from "react-router-dom";
